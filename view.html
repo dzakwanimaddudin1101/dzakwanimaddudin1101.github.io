@@ -7,15 +7,14 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <style>
         /* Custom CSS for PDF Embed styling */
-        .embed-responsive {
-            overflow: hidden;
+        .embed-container {
             position: relative;
+            overflow: hidden;
             width: 100%;
-            height: 0;
-            padding-bottom: 75%; /* Set the aspect ratio of the embed container */
+            padding-top: 150%; /* Set the aspect ratio of the embed container */
         }
 
-        .embed-responsive iframe {
+        .embed-responsive {
             position: absolute;
             top: 0;
             left: 0;
@@ -30,8 +29,8 @@
         <h1 class="text-center mb-4">Book Title 1</h1>
 
         <!-- Embed PDF from Google Drive -->
-        <div class="embed-responsive">
-            <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/1Whu8C-wx_RFIXDT-eML2jL3vcoBu8slz/preview" allowfullscreen></iframe>
+        <div class="embed-container">
+            <iframe class="embed-responsive" src="https://drive.google.com/file/d/1Whu8C-wx_RFIXDT-eML2jL3vcoBu8slz/preview" allowfullscreen></iframe>
         </div>
 
         <a href="index.html" class="btn btn-primary mt-3">Back to Bookspace</a>
