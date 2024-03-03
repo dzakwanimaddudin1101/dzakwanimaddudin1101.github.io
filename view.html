@@ -8,8 +8,10 @@
     <style>
         /* Custom CSS for PDF Embed styling */
         .embed-responsive {
+            overflow: hidden;
+            position: relative;
+            width: 100%;
             height: 0;
-            overflow: hidden; /* Fix for iOS Safari overflow issue */
             padding-bottom: 75%; /* Set the aspect ratio of the embed container */
         }
 
@@ -27,9 +29,9 @@
     <div class="container mt-5">
         <h1 class="text-center mb-4">Book Title 1</h1>
 
-        <!-- Embed PDF -->
-        <div class="embed-responsive embed-responsive-4by3">
-            <iframe class="embed-responsive-item" src="book/book1.pdf" allowfullscreen></iframe>
+        <!-- Embed PDF from Google Drive -->
+        <div class="embed-responsive">
+            <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/1Whu8C-wx_RFIXDT-eML2jL3vcoBu8slz/view?usp=sharing" allowfullscreen></iframe>
         </div>
 
         <a href="index.html" class="btn btn-primary mt-3">Back to Bookspace</a>
