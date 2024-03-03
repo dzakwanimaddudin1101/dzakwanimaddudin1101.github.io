@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookspace - Your Bookshelf</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Custom CSS for card styling */
+        .card {
+            transition: transform 0.2s; /* Add a smooth transition effect on hover */
+        }
+
+        .card:hover {
+            transform: scale(1.05); /* Enlarge the card slightly on hover */
+        }
+
+        .card img {
+            height: 250px; /* Set the desired height for the thumbnail image */
+            object-fit: cover; /* Ensure the thumbnail covers the entire container */
+        }
+
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 100%;
+        }
+
+        .card-title {
+            margin-top: 10px; /* Add some spacing above the title */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Bookspace</h1>
+
+        <!-- Card Deck for Book Thumbnails -->
+        <div class="card-deck mt-5">
+
+            <!-- Example Card 1 -->
+            <a href="view.html" class="card">
+                <img src="thumbnail/2.jpg" class="card-img-top img-fluid" alt="Book 1">
+                <div class="card-body">
+                    <h5 class="card-title">Book Title 1</h5>
+                </div>
+            </a>
+
+            <!-- Example Card 2 -->
+            <a href="view.html" class="card">
+                <img src="thumbnail/thumbnail1.png" class="card-img-top img-fluid" alt="Book 2">
+                <div class="card-body">
+                    <h5 class="card-title">Book Title 2</h5>
+                </div>
+            </a>
+
+            <!-- Add more cards for other books -->
+
+        </div>
+        <div class="card-deck mt-5">
+
+            <!-- Example Card 1 -->
+            <a href="view.html" class="card">
+                <img src="thumbnail/2.jpg" class="card-img-top img-fluid" alt="Book 1">
+                <div class="card-body">
+                    <h5 class="card-title">Book Title 1</h5>
+                </div>
+            </a>
+
+            <!-- Example Card 2 -->
+            <a href="view.html" class="card">
+                <img src="thumbnail/thumbnail1.png" class="card-img-top img-fluid" alt="Book 2">
+                <div class="card-body">
+                    <h5 class="card-title">Book Title 2</h5>
+                </div>
+            </a>
+
+            <!-- Add more cards for other books -->
+
+        </div>
+    </div>
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>
