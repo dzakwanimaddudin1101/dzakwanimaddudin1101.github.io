@@ -28,15 +28,21 @@
             padding: 10px;
             text-align: center;
         }
+
+        .pdf-viewer {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
     </style>
 </head>
 <body>
     <div class="bookshelf">
         <div class="book">
-            <a href="path/to/book1.pdf" target="_blank">Buku 1</a>
+            <iframe class="pdf-viewer" src="https://mozilla.github.io/pdf.js/web/viewer.html?file=book1.pdf"></iframe>
         </div>
         <div class="book">
-            <a href="path/to/book2.pdf" target="_blank">Buku 2</a>
+            <iframe class="pdf-viewer" src="https://mozilla.github.io/pdf.js/web/viewer.html?file=book2.pdf"></iframe>
         </div>
         <!-- Tambahkan lebih banyak buku sesuai kebutuhan -->
     </div>
